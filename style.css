@@ -1,0 +1,235 @@
+/**{
+    border: solid 1px black;
+}*/
+:root {
+    --color-primary: #778a50;
+    --color-background: #EDF2C5;
+    --color-content_text: #7D7D7D;
+    --color-content_bg: #F7FBDA;
+}
+
+body {
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+header {
+    margin-left: 160px;
+    margin-right: 160px;
+    position: relative;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 100px;
+}
+
+header h1 {
+    color: var(--color-primary);
+    font-family: sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.function_btn {
+    margin-top: 35px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.btn img{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.btn_line {
+    margin-right: 10px;
+    height: 25px;
+    width: 1px;
+    background-color: var(--color-primary);
+}
+
+.btn p {
+    margin-right: 10px;
+    border: solid 1px var(--color-primary);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 7px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.btn:last-child p{
+    margin-right: 0px;
+}
+
+.btn:hover p{
+    background-image: linear-gradient(45deg,var(--color-primary));
+    color: var(--color-background);
+    background-color: var(--color-primary);
+}
+
+.nav {
+    display: flex;
+    /* 設定 .nav 為 Flex 容器 */
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    border-radius: 3px;
+    background-color: var(--color-primary);
+    font-family: Arial;
+    font-weight: 900;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+
+.nav li {
+    color: var(--color-background);
+    margin-right: 60px;
+    display: inline;
+    position: relative;
+    left: 30px;
+}
+
+main {
+    margin-left: 160px;
+    padding-top: 0px;
+    margin-right: 160px;
+}
+
+.main_pic {
+    width: 100%;
+    margin: 20px 0 30px;
+    object-fit: contain;
+}
+
+.sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec .vegetables_sec {
+    width: 47%;
+}
+
+.vegetables_sec .vegetables_box {
+    display: flex;
+    align-items: center;
+    /* 垂直置中 */
+    height: 45px;
+    font-size: 23px;
+    font-family: Arial;
+    font-weight: 900;
+    align-items: center;
+    color: var(--color-background);
+    border-radius: 3px;
+    background-color: var(--color-primary);
+}
+
+.vegetables_box p {
+    position: relative;
+    left: 40px;
+}
+
+.vegetables_sec .vegetables_img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vegetables_img img {
+    padding-top: 15px;
+    width: 175px;
+    height: 175px;
+}
+
+.sec .contact_sec {
+    width: 47%;
+    height: 200px;
+}
+
+.contact_sec .contact_box {
+    display: flex;
+    align-items: center;
+    /* 垂直置中 */
+    height: 45px;
+    font-size: 23px;
+    font-family: Arial;
+    font-weight: 900;
+    align-items: center;
+    color: var(--color-background);
+    border-radius: 3px;
+    background-color: var(--color-primary);
+}
+
+.contact_box p {
+    position: relative;
+    left: 40px;
+}
+
+.contact_text {
+    margin-top: 15px;
+    width: 100%;
+    height: 175px;
+    background-color: var(--color-content_bg);
+    font-family: Arial;
+    font-size: 14.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-content_text);
+}
+
+.contact_text p {
+    padding-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.contact_text .contact_line {
+    margin-bottom: -15px;
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 1px;
+    width: 505px;
+    background-color: var(--color-content_text);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+}
+
+footer p {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--color-background);
+}
